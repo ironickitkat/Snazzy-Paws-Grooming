@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+
+     <!--Navigation Menu Bar-->
+     <div class="navbar">
+        <div class = "navbar-container">
+        <!--Logo-->
+        <a href="/index.html" class="logo">
+            <img src="images/snazzy-paws-logo.png" alt="Website Logo"></a>
+        <!-- Hamburger Icon -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <nav id="menu" class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+
+                <!-- Dropdown Menu -->
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">About &#11167;</a>
+                    <div class="dropdown-content">
+                        <a href="our-story.html">Our Story</a>
+                        <a href="gallery.html">Gallery</a>                      
+                    </div>
+                  </li>
+
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            
+            <!-- Button in Navbar -->
+            <li class="navbar-button"><a href="book-now.html">Book Now</a></li>
+            </ul>
+
+            </ul>
+        </nav>
+        </div>
+    </div>
+
+
+
+    <!--Contact Info + Form-->
+     <section class = "container">
+        <div class = "contact-info">
+            <h1>Contact</h1>
+            <br>
+            <p>We’d love to hear from you! Whether you have questions about our grooming services, 
+                want to schedule an appointment, or just want to learn more about how we can pamper your pup, 
+                we're here to help. Fill out the form below or contact us directly via phone or email, 
+                and we'll get back to you as soon as possible. We look forward to making your dog look and feel their best!</p>
+            <br>
+            <p><strong>Email:</strong> hello@snazzypawsgrooming.co.nz</p>
+            <p><strong>Phone:</strong> 03 555 0100</p>
+            <p><strong>Address:</strong> 60 Garland Drive, St Andrews, Hamilton 3200</p>
+        </div>
+
+        
+        <div class = "contact-form">
+            <form class = "booking-form">
+
+            <div class = "form-customer-name">
+
+                <input type="text" id="first-name" name="first-name" placeholder="First Name" aria-label="First Name" required>
+
+                <input type="text" id="last-name" name="last-name" placeholder="Last Name" aria-label="Last Name" required>
+
+            </div>
+
+            
+            <input type="tel" id="phone" name="phone" placeholder="Phone" aria-label="Phone" required>
+
+            <input type="email" id="email" name="email" placeholder="Email" aria-label="Email" required>
+
+            <textarea id="message" name="message" rows="5" placeholder="Message" aria-label="Message"required></textarea>    
+
+            <input type="submit" value="Submit" id = "submit-button" class = "primary-button">
+
+            </form>
+        </div>
+        
+        </div>
+    </section> 
+
+    <!-- Google Earth -->
+    <section class = "google earth">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.520452152578!2d175.2468099760284!3d-37.75439307199044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d22f573355679%3A0xcbc9d100f6f8f9e1!2s60%20Garland%20Drive%2C%20St%20Andrews%2C%20Hamilton%203200!5e0!3m2!1sen!2snz!4v1737789789221!5m2!1sen!2snz" 
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Google Map showing business location"></iframe>
+    </section>
+
+
+
+     <!-- Footer Section -->
+     <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo Section-->
+            <div class = "footer-section">
+                <a href="#" class="logo">
+                    <img src="images/snazzy-paws-logo.png" alt="Website Logo"></a> 
+            </div>
+
+            <!-- Contact Section -->
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>60 Garland Drive, St Andrews, Hamilton 3200</p>
+                <p>03 555 0100 </p>
+                <p>hello@snazzypawsgrooming.co.nz</p>
+            </div>
+    
+            <!-- Links Section -->
+            <div class="footer-section">
+                <h3>Hours<h3>
+                    <ul>
+                        <li>Mon - Fri 9:00am - 5:00pm</li>
+                        <li>Sat 9:00am - 3:00pm</li>
+                        <li>Sun Closed</li>                        
+                    </ul>
+                    
+            </div>
+    
+            <!-- Contact Section -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="book-now.html">Book Now</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="our-story.html">Our Story</a></li>                    
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/hamburger menu.js"></script>
+
+</body>
+</html>

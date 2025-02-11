@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+
+     <!--Navigation Menu Bar-->
+     <div class="navbar">
+        <div class = "navbar-container">
+        <!--Logo-->
+        <a href="/index.html" class="logo">
+            <img src="images/snazzy-paws-logo.png" alt="Website Logo"></a>
+        <!-- Hamburger Icon -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <nav id="menu" class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+
+                <!-- Dropdown Menu -->
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">About &#11167;</a>
+                    <div class="dropdown-content">
+                        <a href="our-story.html">Our Story</a>
+                        <a href="gallery.html">Gallery</a>                      
+                    </div>
+                  </li>
+
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            
+            <!-- Button in Navbar -->
+            <li class="navbar-button"><a href="book-now.html">Book Now</a></li>
+            </ul>
+
+            </ul>
+        </nav>
+        </div>
+    </div>
+
+ 
+    <section class = "container">
+    
+        <div class = "contact-info">
+            <h1>Bookings</h1>
+            <br>
+            <p>Book your pup’s grooming session today! Our expert groomers are ready to pamper your dog with top-notch care, 
+                from baths and haircuts to nail trims and more. Easy online booking available 
+                – just choose a time that works for you and let us take care of the rest!</p>
+            <br>
+            <p><strong>Email:</strong> hello@snazzypawsgrooming.co.nz</p>
+            <p><strong>Phone:</strong> 03 555 0100</p>
+        </div> 
+    
+    <!-- FORM -->
+    <div class = "form-container">    
+    <form class = "booking-form">
+     
+        <fieldset class = "fieldset-customer-details">
+            <legend>Customer Details</legend>
+
+            <div class = "form-customer-name">
+
+                <input type="text" id="first-name" name="first-name" placeholder="First Name" aria-label="First Name" required>
+
+                <input type="text" id="last-name" name="last-name" placeholder="Last Name" aria-label="Last Name" required>
+
+            </div>
+
+            <input type="tel" id="phone" name="phone" placeholder="Phone" aria-label="Phone" required>
+
+            <input type="email" id="email" name="email" placeholder="Email" aria-label="Email" required>
+        </fieldset>
+
+        <fieldset class = "fieldset-dog-details">
+            <legend>Dog Details</legend>
+
+            <input type="text" id="dog-name" name="dog-name" placeholder="Dog Name" aria-label="Dog Name" required>
+
+            <input type="number" id="dog-age" name="dog-age" min="0" max="50" placeholder="Dog Age" aria-label="Dog Age" required>
+
+            <input type="breed" id="breed" name="breed" placeholder="Dog Breed" aria-label="Dog Breed" required>
+
+            <textarea name="comments" rows="10" cols="30" placeholder="Comments (Optional)" aria-label="Comments (optional)"></textarea> 
+
+        </fieldset>
+        <fieldset class = "fieldset-service-details">
+            <legend>Service Details</legend>
+
+            
+            <select id="service-select" name="service-select" aria-label="Service Select" >
+              <option value ="service-0">Select a Service</option>
+              <option value="service-1">Bath & Brush ($25-$50)</option>
+              <option value="service-2">Haircut ($45-$85)</option>
+              <option value="service-3">Nail Trim ($10-$20)</option>
+              <option value="service-4">Ear Cleaning ($10-$15)</option>
+              <option value="service-5">Teeth Brushing ($10-$15)</option>
+              <option value="service-6">De-shedding Treatment ($20-$40)</option>
+              <option value="service-7">Flea & Tick Treatment ($15-$30)</option>
+              <option value="service-8">Spa Package ($75-$150)</option>
+              <option value="service-9">Express Service ($15-$25)</option>
+              <option value="service-10">Medicated Bath ($20-$40)</option>
+              <option value="service-11">Special Breed Cuts (Price Varies)</option>
+              <option value="service-12">Puppy Package ($30-$50)</option>
+              <option value="service-13">Senior Dog Package ($40-$80)</option>
+              <option value="service-14">Full Grooming Package ($60-$120)</option>
+            </select>
+
+            <label for="appointment">Appointment Date & Time</label>
+            <input type="datetime-local" id="appointment" name="appointment">
+        </fieldset>
+
+        <input type="submit" value="Submit" class = "primary-button">
+      </form>
+    </div>  
+      </section>
+
+
+
+     <!-- Footer Section -->
+     <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo Section-->
+            <div class = "footer-section">
+                <a href="#" class="logo">
+                    <img src="images/snazzy-paws-logo.png" alt="Website Logo"></a> 
+            </div>
+
+            <!-- Contact Section -->
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>60 Garland Drive, St Andrews, Hamilton 3200</p>
+                <p>03 555 0100 </p>
+                <p>hello@snazzypawsgrooming.co.nz</p>
+            </div>
+    
+            <!-- Links Section -->
+            <div class="footer-section">
+                <h3>Hours<h3>
+                    <ul>
+                        <li>Mon - Fri 9:00am - 5:00pm</li>
+                        <li>Sat 9:00am - 3:00pm</li>
+                        <li>Sun Closed</li>                        
+                    </ul>
+                    
+            </div>
+    
+            <!-- Contact Section -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="book-now.html">Book Now</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="our-story.html">Our Story</a></li>                    
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/hamburger menu.js"></script>
+
+</body>
+</html>
