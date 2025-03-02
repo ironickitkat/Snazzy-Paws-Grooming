@@ -1,0 +1,307 @@
+/* Override Bootstrap primary color */
+:root {
+    --bs-primary: #ff6347; /* Tomato red */
+    --bs-secondary: #4caf50; /* Green */
+    --bs-success: #28a745; /* Darker green */
+    --bs-info: #17a2b8; /* Teal */
+    --bs-warning: #ffc107; /* Yellow */
+    --bs-danger: #dc3545; /* Red */
+    --bs-light: #f8f9fa; /* Light gray */
+    --bs-dark: #343a40; /* Dark gray */
+}
+
+/* Applying custom colors */
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+/* Customizing Bootstrap navbar */
+.bg-dark {
+    background-color: #0C2D57 !important; /* Dark navbar */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #f8f9fa; /* Light color for navbar items */
+}
+
+/* Adding DM Sans Font  */
+.dm-sans-google-font {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "DM Sans", sans-serif;
+}
+
+/* Dropdown Menu */
+
+.dropdown-menu{
+  background-color: #0C2D57;
+  color:white;
+}
+
+.dropdown-item{
+  color:white;
+}
+
+
+.hero {
+    background: linear-gradient(to bottom,rgb(239 236 236 / .2),rgb(12 45 87 / .73)),
+    url('/images/animal-groomer-woman-drying-fur-of-little-corgi-do-2024-06-11-21-16-41-utc.jpeg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    height: 90vh; /* Full viewport height on desktop */
+    min-height: 400px; /* Minimum height for smaller screens */
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+@media (max-width: 576px) {
+  .hero-content {
+    font-size: 1.2rem;
+  }
+}
+
+
+/* Square image for homepage hero section */
+.square-img {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;  /* This makes the container a square */
+    position: relative;
+    overflow: hidden;  /* Ensures that excess parts of the image are hidden */
+}
+
+.square-img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* Center the image within the square */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensures the image covers the square */
+}
+
+.testimonial-carousel {
+    background-color: #0C2D57; /* Light background color for the carousel */
+    padding: 50px 0; /* Some padding around the carousel */
+}
+
+.testimonial-item {
+    text-align: center;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #0C2D57;
+}
+
+.testimonial-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.testimonial-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color:white;
+}
+
+.testimonial-role {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.testimonial-quote {
+    font-style: italic;
+    color: white;
+}
+
+.button-row{
+  align-items: center;
+}
+
+
+/* For small screens, move controls beneath the testimonial */
+@media (max-width: 767.98px) {
+    .carousel-control-prev, .carousel-control-next {
+    display: inline-block;
+    width: auto;
+    margin: 10px 0;
+    }
+
+    /* Center the controls beneath the carousel on small screens */
+  .carousel-controls-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    margin-top: 20px;
+    }
+
+    
+
+  .carousel-control-prev, .carousel-control-next {
+     margin: 0 10px; /* Space between the controls */
+    }
+}
+
+/* Style for the quick links list */
+.footer .quick-links ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+/* Our Story Image */
+.page-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Resources Page CSS */
+
+.blog-post {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.blog-post img {
+  width: 100%; /* Makes image responsive */
+  height: auto; /* Ensures the image maintains its aspect ratio */
+  border-radius: 5px;
+}
+
+.blog-post h3 {
+  font-size: 1.6rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight:600;
+}
+.see-more-btn {
+  margin-top: 10px;
+}
+
+/* Gallery CSS */
+
+.gallery-title {  
+padding-bottom:1rem;
+}
+.gallery-image {
+  width: 100%; /* Ensures the image takes up full width of the column */
+  aspect-ratio: 1/1;
+  object-fit: cover; /* Ensures images cover the area without distorting */
+  border-radius: 5px;
+}
+.gallery-item {
+  padding: 10px;
+}
+
+/* Contact Page CSS */
+
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.contact-info, .contact-form {
+  flex: 1;
+  margin: 30px;
+}
+.contact-info h4 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.contact-info p {
+  margin-bottom: 10px;
+
+}
+
+.contact-form{
+  padding:20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Google Map Embed */
+
+/* Ensures the iframe is responsive */
+.map-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Ensure stacking of elements on medium screens (e.g., iPad) */
+@media (max-width: 768px) {
+.contact-section {
+  flex-direction: column;
+  }
+.contact-info, .contact-form {
+  flex: none;
+  width: 100%; /* Make both sections take full width on smaller screens */
+  margin: 10px 0; /* Add vertical space between sections */
+  }
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Style for the quick links list */
+.footer .quick-links ul a {
+  color: rgba(255,255,255,.55);
+  text-decoration: none;           
+  }
+
+  .footer .quick-links ul a:hover{
+    color:white;
+  }
+
+  @media (max-width: 767.98px) {
+    .footer {
+      align-items: center;
+      text-align: center;
+
+    }
+  }

@@ -2,178 +2,248 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="description" content="Homepage for Hamilton Dog Grooming Company">
+    <title>Snazzy Paws Grooming</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
-    <link rel="stylesheet" href="css/stylesheet.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="custom.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" 
+    rel="stylesheet">
+
 </head>
 <body>
-    <!--Navigation Menu Bar-->
-    <div class="navbar">
-        <div class = "navbar-container">
-        <!--Logo-->
-        <a href="index.html" class="logo">
-            <img src="images/snazzy-paws-logo.png" alt="Website Logo"></a>
-        <!-- Hamburger Icon -->
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+
+    
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class = container-fluid>
+  <!-- Logo on the left -->
+  <a class="navbar-brand" href="index.html">
+    <img src="/images/snazzy-paws-logo.png" alt="Snazzy Paws Grooming Logo" width="140"/></a>
+  
+  <!-- Button to toggle navbar on mobile -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <!-- Navbar items (collapsed on mobile) -->
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+      <!-- Regular Menu Item -->
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="services.html">Services</a>
+      </li>
+
+      <!-- Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          About
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="our-story.html">Our Story</a>
+          <a class="dropdown-item" href="gallery.html">Gallery</a>
         </div>
+      </li>
 
-        <!-- Mobile Navigation Menu -->
-        <nav id="menu" class="menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
+      <li class="nav-item">
+        <a class="nav-link" href="resources.html">Resources</a>
+      </li>
 
-                <!-- Dropdown Menu -->
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">About &#11167;</a>
-                    <div class="dropdown-content">
-                        <a href="our-story.html">Our Story</a>
-                        <a href="gallery.html">Gallery</a>                      
-                    </div>
-                  </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+      
+      <!-- Button-like Menu Item -->
+      <li class="nav-item">
+        <a class="nav-link btn btn-primary text-white" href="book-now.html">Book Now</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
 
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            
-            <!-- Button in Navbar -->
-            <li class="navbar-button"><a href="book-now.html">Book Now</a></li>
-            </ul>
-
-        
-        </nav>
-        </div>
-    </div>
-
-    <!-- Hero Image Section -->
-    <header class="hero" 
-    style="background-image:linear-gradient(to bottom,rgb(239 236 236 / .2),rgb(12 45 87 / .73)),
-    url(images/animal-groomer-woman-drying-fur-of-little-corgi-do-2024-06-11-21-16-41-utc.jpeg);">
-        <div class="hero-content">
-                <h1>Tails wagging, paws sparkling</h1>
-                <p>See our full range of services below</p>
-                <!--<button class = "primary-button"><a href="services.html">Services</a></button>-->
-                <a href="services.html" class="primary-button">Services</a>
+    <!-- Hero Section -->
+    <header class="hero text-white text-center py-5">
+        <div class="container hero-content">
+            <h1 class="display-4">Tails wagging, paws sparkling</h1>
+            <p class="lead">See our full range of services below</p>
+            <a href="services.html" class="btn btn-primary">Services</a>
         </div>
     </header>
 
-    <!-- Image Grid Section-->
-     <section>
-        <div class = home-image-grid>
-        <div class="grid-item">
-            <img src="images/samoyed.jpeg" alt="Samoyed Dog being groomed">
-        </div>
-        <div class="grid-item">
-            <img src="images/brown-dog.jpeg" alt="Brown Dog getting fur trimmed">
-        </div>
-        <div class="grid-item">
-            <img src="images/pug.jpeg" alt="Happy Pug getting nails trimmed">
-        </div>
-        <div class="grid-item">
-            <img src="images/fluffy-dog.jpeg" alt="Small fluffy dog getting fur trimmed">
-        </div>       
-        </div> 
-        <div class="container-things-above">
-            <h2 class="title">Some happy doggies</h2>
-            <a href="gallery.html" class="primary-button">See more of our work</a>           
-        </div>    
-     </section>
-
-    <!-- Testimonial Carousel Section-->
-     <section>
-        <div class="carousel-container">
-            <div class="carousel">
-                <div class="testimonial" id="testimonial1">
-                    <p>"This is the first testimonial. I had an amazing experience!"</p>
-                    <h4>- John Doe</h4>
-                </div>
-                <div class="testimonial" id="testimonial2">
-                    <p>"The second testimonial is also very positive. I highly recommend this!"</p>
-                    <h4>- Jane Smith</h4>
-                </div>
-                <div class="testimonial" id="testimonial3">
-                    <p>"Fantastic service! I will definitely use this again."</p>
-                    <h4>- Alex Brown</h4>
-                </div>
-                <div class="testimonial" id="testimonial4">
-                    <p>"An exceptional experience from start to finish. Highly satisfied!"</p>
-                    <h4>- Emily White</h4>
-                </div>
+    
+    <!--Grid of 4 images-->
+    <section class="container mt-5">
+        <div class="row">
+            <!-- Images -->
+            <div class="col-6 col-lg-3 mb-3">
+              <div class="square-img">
+                <img src="/images/samoyed.jpeg" alt="Image 1">
+              </div>
             </div>
-            <div class="controls">
-                <button class="prev" onclick="changeTestimonial(-1)">&#10094;</button>
-                <button class="next" onclick="changeTestimonial(1)">&#10095;</button>
-            </div> 
-        </div>
-     </section>
-     
-    <!--Button Row-->
-     <section>
-        <div class="button-row"> 
-        <button class="secondary-button">More reviews</button>
-        <button class="secondary-button">Instagram</button>
-        <button class="secondary-button">Facebook</button>
-       </div>
-     </section>
+            <div class="col-6 col-lg-3 mb-3">
+              <div class="square-img">
+                <img src="/images/brown-dog.jpeg" alt="Image 2">
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-3">
+              <div class="square-img">
+                <img src="/images/pug.jpeg" alt="Image 3">
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-3">
+              <div class="square-img">
+                <img src="/images/fluffy-dog.jpeg" alt="Image 4">
+              </div>
+            </div>
+          </div>
+          </section>
+          <!-- Heading and button -->
+          <section class="container mt-3 pb-5">
+            <div class="row">
+              <div class="col-12 d-flex justify-content-between align-items-center flex-column flex-md-row">
+                <!-- Heading -->
+                <h2 class="mb-3 mb-md-0">Some happy doggies</h2>
+        
+                <!-- Button -->
+                <a href="services.html" class="btn btn-primary">See more of our work</a>
+              </div>
+            </div>
+          </section>
 
-    <!--Email Signup Section-->
-     <section>
-        <div class="email-signup">
-            <h2>Sign up for our newsletter</h2>
-            <form action="#" method="post">
-                <div class="email-container">
-                    <input type="email" id="email" name="email" placeholder="Enter your email" aria-label="Enter your email" required>
-                    <button type="submit" class = "primary-button">Sign Up</button>
-                </div>
-            </form>
+    <!-- Testimonial Carousel Section -->
+  <section class="testimonial-carousel">
+    <div class="container">
+      <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <!-- First Testimonial -->
+          <div class="carousel-item active">
+            <div class="testimonial-item">
+              <div class="testimonial-name">John Doe</div>
+              <div class="testimonial-role">CEO, Company ABC</div>
+              <div class="testimonial-quote">"This product changed the way we do business. Highly recommend it to others!"</div>
+            </div>
+          </div>
+          <!-- Second Testimonial -->
+          <div class="carousel-item">
+            <div class="testimonial-item">
+              <div class="testimonial-name">Jane Smith</div>
+              <div class="testimonial-role">Marketing Director, XYZ Inc.</div>
+              <div class="testimonial-quote">"Absolutely fantastic service! It has exceeded all of our expectations."</div>
+            </div>
+          </div>
+          <!-- Third Testimonial -->
+          <div class="carousel-item">
+            <div class="testimonial-item">
+              <div class="testimonial-name">Alice Johnson</div>
+              <div class="testimonial-role">Product Manager, Tech Solutions</div>
+              <div class="testimonial-quote">"A game-changer in our industry. The team is incredibly supportive and responsive!"</div>
+            </div>
+          </div>
         </div>
-     </section>
+
+        <!-- Carousel Controls -->
+         <div class="carousel-controls">
+        <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         
+        </a>
+        <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </div>
+        </a>
+      </div>
+    </div>
+
+     <!-- Container with Three Buttons -->
+  <div class="container my-5">
+    <div class="row">
+      <!-- Button 1 -->
+      <div class="col-12 col-md-4 mb-3">
+        <button class="btn btn-primary w-100">More reviews</button>
+      </div>
+      <!-- Button 2 -->
+      <div class="col-12 col-md-4 mb-3">
+        <button class="btn btn-primary w-100">Instagram</button>
+      </div>
+      <!-- Button 3 -->
+      <div class="col-12 col-md-4 mb-3">
+        <button class="btn btn-primary w-100">Facebook</button>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <section>
+   <!-- Container for the email signup form -->
+   <div class="container my-5">
+    <!-- Heading -->
+    <h2 class="text-center mb-4">Sign up for our newsletter</h2>
+
+    <!-- Form row to align the input and button -->
+    <div class="row justify-content-center">
+      <!-- Input group for email -->
+      <div class="col-12 col-md-8 d-flex">
+        <input type="email" class="form-control" placeholder="Enter your email" required>
+        <button class="btn btn-primary ml-2" type="submit">Sign Up</button>
+      </div>
+    </div>
+  </div>
+  </section>
+
 
     <!-- Footer Section -->
-    <footer class="footer">
-        <div class="footer-container">
-            <!-- Logo Section-->
-            <div class = "footer-section">
-                <a href="#" class="logo">
-                    <img src="images/snazzy-paws-logo.png" alt="Website Logo"></a> 
-            </div>
-
-            <!-- Contact Section -->
-            <div class="footer-section">
-                <h3>Contact Us</h3>
-                <p>60 Garland Drive, St Andrews, Hamilton 3200</p>
-                <p>03 555 0100 </p>
-                <p>hello@snazzypawsgrooming.co.nz</p>
-            </div>
-    
-            <!-- Links Section -->
-            <div class="footer-section">
-                <h3>Hours</h3>
-                    <ul>
-                        <li>Mon - Fri 9:00am - 5:00pm</li>
-                        <li>Sat 9:00am - 3:00pm</li>
-                        <li>Sun Closed</li>                        
-                    </ul>
-                    
-            </div>
-    
-            <!-- Contact Section -->
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="book-now.html">Book Now</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="our-story.html">Our Story</a></li>                    
-                </ul>
-            </div>
+  <footer class="footer bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <!-- Logo Column -->
+        <div class="col-12 col-lg-3 col-md-6 mb-4 mb-md-0">
+          <img src="images/snazzy-paws-logo.png" alt="Logo" class="logo" width ="140">
         </div>
-    </footer>
-    <script src="js/hamburger_menu.js"></script>
+
+        
+
+        <!-- Contact Details Column -->
+        <div class="col-12 col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5>Contact Us</h5>
+          <p>60 Garland Drive<br>St Andrews, Hamilton 3200</p>
+          <p>hello@snazzypawsgrooming.co.nz<br>03 555 0100</p>
+        </div>  
+
+
+
+        <!-- Opening Hours Column -->
+        <div class="col-12 col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5>Opening Hours</h5>
+          <p>Mon - Fri 9:00am - 5:00pm</p>
+          <p>Sat 9:00am - 3:00pm</p>
+          <p>Sun closed</p>
+        </div>
+
+        <!-- Quick Links Column -->
+        <div class="col-12 col-lg-3 col-md-6 mb-4 mb-md-0 quick-links">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="book-now.html">Book Now</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="staff.html">Staff Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+    <!-- Bootstrap JS and Popper -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

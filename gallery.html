@@ -2,141 +2,168 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="description" content="Gallery page showing happy dogs.">
     <title>Gallery</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
-    <link rel="stylesheet" href="css/stylesheet.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="custom.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" 
+    rel="stylesheet">
+
 </head>
 <body>
+   
+    
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class = container-fluid>
+  <!-- Logo on the left -->
+  <a class="navbar-brand" href="index.html">
+    <img src="/images/snazzy-paws-logo.png" alt="Snazzy Paws Grooming Logo" width="140"/></a>
+  
+  <!-- Button to toggle navbar on mobile -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <!-- Navbar items (collapsed on mobile) -->
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+      <!-- Regular Menu Item -->
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="services.html">Services</a>
+      </li>
 
-     <!--Navigation Menu Bar-->
-     <div class="navbar">
-        <div class = "navbar-container">
-        <!--Logo-->
-        <a href="index.html" class="logo">
-            <img src="images/snazzy-paws-logo.png" alt="Website Logo"></a>
-        <!-- Hamburger Icon -->
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+      <!-- Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          About
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="our-story.html">Our Story</a>
+          <a class="dropdown-item" href="gallery.html">Gallery</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="resources.html">Resources</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+      
+      <!-- Button-like Menu Item -->
+      <li class="nav-item">
+        <a class="nav-link btn btn-primary text-white" href="book-now.html">Book Now</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+
+<div class="container my-5">
+  <!-- Gallery Title -->
+  <div class="gallery-title">
+      <h1>Our Gallery</h1>
+  </div>
+
+ <!-- Gallery Grid -->
+ <div class="row">
+  <!-- First Image -->
+  <div class="col-lg-4 col-md-4 col-12 gallery-item">
+      <img src="images/fluffy-dog-2.jpeg" alt="Image 1" class="gallery-image">
+  </div>
+  <!-- Second Image -->
+  <div class="col-lg-4 col-md-4 col-12 gallery-item">
+      <img src="images/brown-dog.jpeg" alt="Image 2" class="gallery-image">
+  </div>
+  <!-- Third Image -->
+  <div class="col-lg-4 col-md-4 col-12 gallery-item">
+      <img src="images/pug.jpeg" alt="Image 3" class="gallery-image">
+  </div>
+
+  <!-- Fourth Image -->
+  <div class="col-lg-4 col-md-4 col-12 gallery-item">
+      <img src="images/fluffy-dog.jpeg" alt="Image 4" class="gallery-image">
+  </div>
+  <!-- Fifth Image -->
+  <div class="col-lg-4 col-md-4 col-12 gallery-item">
+      <img src="images/samoyed.jpeg" alt="Image 5" class="gallery-image">
+  </div>
+  <!-- Sixth Image -->
+  <div class="col-lg-4 col-md-4 col-12 gallery-item">
+      <img src="images/poodle-grooming.jpeg" alt="Image 6" class="gallery-image">
+  </div>
+
+  <!-- Seventh Image -->
+  <div class="col-lg-4 col-md-4 col-12 gallery-item">
+      <img src="images/golden-retriever-grooming.jpeg" alt="Image 7" class="gallery-image">
+  </div>
+  <!-- Eighth Image -->
+  <div class="col-lg-4 col-md-4 col-12 gallery-item">
+      <img src="images/corgi-grooming.jpeg" alt="Image 8" class="gallery-image">
+  </div>
+  <!-- Ninth Image -->
+  <div class="col-lg-4 col-md-4 col-12 gallery-item">
+      <img src="images/fluffy-dog-3.jpeg" alt="Image 9" class="gallery-image">
+  </div>
+</div>
+</div>
+
+
+    <!-- Footer Section -->
+  <footer class="footer bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <!-- Logo Column -->
+        <div class="col-12 col-lg-3 col-md-6 mb-4 mb-md-0">
+          <img src="images/snazzy-paws-logo.png" alt="Logo" class="logo" width ="140">
         </div>
 
-        <!-- Mobile Navigation Menu -->
-        <nav id="menu" class="menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
+        
 
-                <!-- Dropdown Menu -->
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">About &#11167;</a>
-                    <div class="dropdown-content">
-                        <a href="our-story.html">Our Story</a>
-                        <a href="gallery.html">Gallery</a>                      
-                    </div>
-                  </li>
+        <!-- Contact Details Column -->
+        <div class="col-12 col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5>Contact Us</h5>
+          <p>60 Garland Drive<br>St Andrews, Hamilton 3200</p>
+          <p>hello@snazzypawsgrooming.co.nz<br>03 555 0100</p>
+        </div>  
 
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            
-            <!-- Button in Navbar -->
-            <li class="navbar-button"><a href="book-now.html">Book Now</a></li>
-            </ul>
 
-        </nav>
+
+        <!-- Opening Hours Column -->
+        <div class="col-12 col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5>Opening Hours</h5>
+          <p>Mon - Fri 9:00am - 5:00pm</p>
+          <p>Sat 9:00am - 3:00pm</p>
+          <p>Sun closed</p>
         </div>
+
+        <!-- Quick Links Column -->
+        <div class="col-12 col-lg-3 col-md-6 mb-4 mb-md-0 quick-links">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="book-now.html">Book Now</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="staff.html">Staff Login</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </footer>
 
 
-    <section class = just-title>
-        <div class="container">
-            <div class="text">
-                <h1>Gallery</h1>
-                <br>
-                <p>See some of our beautiful clients enjoying their pampering session at Snazzy Paws Grooming!</p>
-        </div>
-        </div>
-    </section>
-
-        <!-- Image Grid Section-->
-     <section>
-        <div class = gallery-image-grid>
-        <div class="grid-item">
-            <img src="images/fluffy-dog-2.jpeg" alt="Freshly grooming small dog sitting on grooming table">
-        </div>
-        <div class="grid-item">
-            <img src="images/brown-dog.jpeg" alt="Brown Dog getting fur trimmed">
-        </div>
-        <div class="grid-item">
-            <img src="images/pug.jpeg" alt="Happy Pug getting nails trimmed">
-        </div>
-        <div class="grid-item">
-            <img src="images/fluffy-dog.jpeg" alt="Small fluffy dog getting fur trimmed">
-        </div>
-        <div class="grid-item">
-            <img src="images/samoyed.jpeg" alt="Samoyed Dog being groomed">
-        </div>
-        <div class="grid-item">
-            <img src="images/poodle-grooming.jpeg" alt="Poodle gettings its fur trimmed">
-        </div>
-        <div class="grid-item">
-            <img src="images/golden-retriever-grooming.jpeg" alt="Golden Retriever having its fur dried after a wash">
-        </div>
-        <div class="grid-item">
-            <img src="images/corgi-grooming.jpeg" alt="Happy Corgi about to get its nails trimmed">
-        </div>
-        <div class="grid-item">
-            <img src="images/fluffy-dog-3.jpeg" alt="Small chihuahua getting dried with a towel after bath">
-        </div>                
-        </div>
-        </section> 
-
-
-     <!-- Footer Section -->
-     <footer class="footer">
-        <div class="footer-container">
-            <!-- Logo Section-->
-            <div class = "footer-section">
-                <a href="#" class="logo">
-                    <img src="images/snazzy-paws-logo.png" alt="Website Logo"></a> 
-            </div>
-
-            <!-- Contact Section -->
-            <div class="footer-section">
-                <h3>Contact Us</h3>
-                <p>60 Garland Drive, St Andrews, Hamilton 3200</p>
-                <p>03 555 0100 </p>
-                <p>hello@snazzypawsgrooming.co.nz</p>
-            </div>
-    
-            <!-- Links Section -->
-            <div class="footer-section">
-                <h3>Hours</h3>
-                    <ul>
-                        <li>Mon - Fri 9:00am - 5:00pm</li>
-                        <li>Sat 9:00am - 3:00pm</li>
-                        <li>Sun Closed</li>                        
-                    </ul>
-                    
-            </div>
-    
-            <!-- Contact Section -->
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="book-now.html">Book Now</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="our-story.html">Our Story</a></li>                    
-                </ul>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/hamburger_menu.js"></script>
-
+    <!-- Bootstrap JS and Popper -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
