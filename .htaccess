@@ -1,6 +1,6 @@
 <Files "staff.html">
     AuthType Basic
     AuthName "Restricted Access"
-    AuthUserFile file:///C:/Users/kakap/OneDrive/Documents/Web%20Development%20&%20Design%20Diploma/BIT%20607%20Web%20Development/AS3/AS3%20Web%20files/.htpasswd
+    AuthUserFile .htpasswd
     Require valid-user
 </Files>
